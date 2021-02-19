@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out source code
-        uses: actions/checkout@2
+        uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
       - name: Increment value
