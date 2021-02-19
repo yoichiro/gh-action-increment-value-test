@@ -8,6 +8,10 @@ jobs:
     name: Increment value test
     runs-on: ubuntu-latest
     steps:
+      - name: Check out source code
+        uses: actions/checkout@2
+        with:
+          ref: ${{ github.ref }}
       - name: Increment value
         uses: yoichiro/gh-action-increment-value@main
         with:
