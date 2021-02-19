@@ -2,7 +2,7 @@ name: Increment value test
 on:
   push:
     branches:
-	  - main
+      - main
 jobs:
   test:
     name: Increment value test
