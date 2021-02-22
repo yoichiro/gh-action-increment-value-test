@@ -1,0 +1,14 @@
+{
+  "name": "gh-action-increment-value-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yoichiro/gh-action-increment-value-test.git",
+  "author": "Yoichiro Tanaka <yoichiro6642@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
