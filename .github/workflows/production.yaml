@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**/build-number.json'
 jobs:
   deploy:
     name: Build and Deploy
