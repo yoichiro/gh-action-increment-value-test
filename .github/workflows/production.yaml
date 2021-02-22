@@ -22,6 +22,8 @@ jobs:
           target_file: 'build-number.json'
           prefix: '{"buildNumber":'
           suffix: '}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
