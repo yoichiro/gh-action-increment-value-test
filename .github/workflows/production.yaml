@@ -23,7 +23,7 @@ jobs:
           prefix: '{"buildNumber":'
           suffix: '}'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.INCREMENT_VALUE_PAT }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
