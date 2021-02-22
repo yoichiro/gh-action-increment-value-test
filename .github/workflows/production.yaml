@@ -15,8 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
-        env:
-          GITHUB_TOKEN: ${{ secrets.INCREMENT_VALUE_PAT }}
+          token: ${{ secrets.INCREMENT_VALUE_PAT }}
       - name: Increment value
         uses: yoichiro/gh-action-increment-value@main
         with:
@@ -24,8 +23,6 @@ jobs:
           target_file: 'build-number.json'
           prefix: '{"buildNumber":'
           suffix: '}'
-        env:
-          GITHUB_TOKEN: ${{ secrets.INCREMENT_VALUE_PAT }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
