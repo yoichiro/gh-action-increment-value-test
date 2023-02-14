@@ -19,7 +19,7 @@ jobs:
           repository: yoichiro/gh-action-increment-value-test
           ref: main
           token: ${{ secrets.INCREMENT_VALUE_PAT }}
-          set-safe-directory: false
+          fetch-depth: 0
       - name: Increment value
         uses: yoichiro/gh-action-increment-value@main
         with:
