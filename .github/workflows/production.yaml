@@ -8,10 +8,10 @@ on:
 jobs:
   deploy:
     name: Build and Deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [18.x]
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
