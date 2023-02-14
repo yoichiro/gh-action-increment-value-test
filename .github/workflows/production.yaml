@@ -16,6 +16,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
+          repository: yoichiro/gh-action-increment-value-test
           ref: main
           token: ${{ secrets.INCREMENT_VALUE_PAT }}
       - name: Increment value
