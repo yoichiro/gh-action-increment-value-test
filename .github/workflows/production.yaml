@@ -19,7 +19,7 @@ jobs:
           ref: main
           token: ${{ secrets.INCREMENT_VALUE_PAT }}
       - name: Increment value
-        uses: yoichiro/gh-action-increment-value@git-lfs
+        uses: yoichiro/gh-action-increment-value@main
         with:
           target_directory: 'foobar/baz'
           target_file: 'build-number.json'
