@@ -8,16 +8,17 @@ on:
 jobs:
   deploy:
     name: Build and Deploy
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: main
           token: ${{ secrets.INCREMENT_VALUE_PAT }}
+          set-safe-directory: false
       - name: Increment value
         uses: yoichiro/gh-action-increment-value@main
         with:
