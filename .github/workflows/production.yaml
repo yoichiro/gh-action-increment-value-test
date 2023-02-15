@@ -21,7 +21,7 @@ jobs:
           token: ${{ secrets.INCREMENT_VALUE_PAT }}
           fetch-depth: 0
       - name: Increment value
-        uses: yoichiro/gh-action-increment-value@fix-git-issue
+        uses: yoichiro/gh-action-increment-value@v5
         with:
           target_directory: 'foobar/baz'
           target_file: 'build-number.json'
